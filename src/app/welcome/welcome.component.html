@@ -42,7 +42,13 @@
 </section>
 
 
-@defer (on viewport) {
+<!-- @defer (on viewport) {
+ <app-offer-preview />
+} @placeholder {
+  <p>We might have offers!</p>
+} -->
+
+@defer (on interaction; prefetch on hover) {
  <app-offer-preview />
 } @placeholder {
   <p>We might have offers!</p>
